@@ -1,0 +1,28 @@
+﻿<Window x:Class="Blackjack.DeleteProfile"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Blackjack"
+        mc:Ignorable="d"
+        Title="DeleteProfile" Height="1080" Width="1960" Background="#FF0B3000">
+    <Grid Margin="10,0,12,4">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="796*"/>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition Width="169*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="41*"/>
+            <RowDefinition Height="499*"/>
+        </Grid.RowDefinitions>
+        <Expander x:Name="expandernames" Header="Profile to Delete" HorizontalAlignment="Left" Height="897" Margin="31,10,0,0" VerticalAlignment="Top" Width="626" FontSize="24" Grid.Row="1">
+            <ListBox x:Name="lstplayers" HorizontalAlignment="Left" Height="746" Margin="10,0,0,0" Width="591"/>
+        </Expander>
+        <Button x:Name="btnremove" Content="Delete Profile" HorizontalAlignment="Left" Height="175" Margin="970,732,0,0" Grid.Row="1" VerticalAlignment="Top" Width="310" FontSize="36" Click="btnremove_Click"/>
+        <TextBlock x:Name="txtinstructions" HorizontalAlignment="Left" Height="330" Margin="1026,113,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="684" FontFamily="Tahoma" FontSize="36" LineHeight="16" Background="White" Grid.ColumnSpan="3"><Run Text="Please select a profile from the drop-down and then click delete button. "/><LineBreak/><Run Text="                                                                      Ensure the correct profile is selected as all removals are permanent.                  "/><LineBreak/><Run/><LineBreak/><Run Text="Only one profile can be deleted at a time"/></TextBlock>
+        <Label x:Name="lblinfo" Content="INFORMATION" HorizontalAlignment="Left" Height="401" Margin="1026,42,0,0" Grid.Row="1" VerticalAlignment="Top" Width="684" FontFamily="Tahoma" FontSize="48" Background="Transparent" Foreground="Yellow" Grid.ColumnSpan="3"/>
+        <Button x:Name="btnback" Content="Back to Menu" HorizontalAlignment="Left" Height="175" Margin="1478,732,0,0" Grid.Row="1" VerticalAlignment="Top" Width="310" FontSize="36" Click="btnback_Click" Grid.ColumnSpan="3"/>
+        <Label x:Name="lblwarning" Content="SELECT A PROFILE TO DELETE!" HorizontalAlignment="Left" Height="76" Margin="1109,557,0,0" VerticalAlignment="Top" Width="538" Background="#00000000" Foreground="Red" FontSize="36" FontWeight="Bold" Grid.Row="1" Grid.ColumnSpan="3" Visibility="Hidden"/>
+    </Grid>
+</Window>

@@ -1,0 +1,32 @@
+﻿<Window x:Class="Blackjack.LoadProfile"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Blackjack"
+        mc:Ignorable="d"
+        Title="LoadProfile" Height="1080" Width="1920">
+    <Grid Background="#FF0B3000">
+        <Expander x:Name="expList" Header="PROFILE LIST" HorizontalAlignment="Left" Height="808" Margin="54,77,0,0" VerticalAlignment="Top" Width="463" FontSize="24">
+            <ListBox x:Name="lstPlayers" HorizontalAlignment="Left" Height="684" Margin="9,0,0,0" Width="433" Background="White" FontSize="20">
+                <ListBoxItem>
+                    <StackPanel Orientation="Horizontal"/>
+                </ListBoxItem>
+            </ListBox>
+        </Expander>
+        <Button x:Name="btnstart" Content="Load and Start" HorizontalAlignment="Left" Height="136" Margin="777,689,0,0" VerticalAlignment="Top" Width="250" FontSize="28" Click="btnstart_Click" >
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                    <GradientStop Color="#FFF3F3F3" Offset="0"/>
+                    <GradientStop Color="#FFEBEBEB" Offset="0.5"/>
+                    <GradientStop Color="#FFDDDDDD" Offset="0.5"/>
+                    <GradientStop Color="#FFCDCDCD" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnmenu" Content="Back to Menu" HorizontalAlignment="Left" Height="135" Margin="1301,690,0,0" VerticalAlignment="Top" Width="250" FontSize="28" Click="btnmenu_Click"/>
+        <TextBlock x:Name="txtinstructions" HorizontalAlignment="Left" Height="315" Margin="817,176,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="679" FontFamily="Tahoma" FontSize="36" LineHeight="16" Background="White"><Run Text="Please select a profile from the drop-down and then click "/><Run Text="load."/><LineBreak/><Run/><LineBreak/><Run Text="Game will begin with profile selected "/><LineBreak/><Run/><LineBreak/><Run Foreground="Red" Text="WARNING"/><Run Text=" "/><Run Text="- If "/><Run Text="no profile selected, player will be taken back to menu"/><Run Text="."/><Run Text="                                                                     "/></TextBlock>
+        <Label x:Name="lblinfo" Content="INFORMATION" HorizontalAlignment="Left" Height="401" Margin="817,90,0,0" VerticalAlignment="Top" Width="679" FontFamily="Tahoma" FontSize="48" Background="Transparent" Foreground="Yellow"/>
+        <Label x:Name="lblerror" Content="SELECT PROFILE BEFORE STARTING!" HorizontalAlignment="Left" Height="106" Margin="742,536,0,0" VerticalAlignment="Top" Width="809" FontSize="48" Foreground="#FFFF7400" Cursor="None" Visibility="Hidden"/>
+    </Grid>
+</Window>

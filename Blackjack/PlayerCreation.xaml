@@ -1,0 +1,52 @@
+﻿<Window x:Class="Blackjack.PlayerCreation"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Blackjack"
+        mc:Ignorable="d"
+        Title="PlayerCreation" Height="1080" Width="1920">
+    <Grid Background="#FF164916" Width="1920" Height="1080">
+        <Frame x:Name="frameinfo" Content="" HorizontalAlignment="Left" Height="404" Margin="350,235,0,0" VerticalAlignment="Top" Width="1244" Background="#FF2D952D" OpacityMask="White" Navigated="frameinfo_Navigated"/>
+
+        <Label x:Name="lblname" Content="Player's Name" HorizontalAlignment="Left" Height="81" Margin="421,311,0,0" VerticalAlignment="Top" Width="356" Opacity="0.99" FontSize="30" RenderTransformOrigin="0.485,0.493" FontWeight="Medium" TextOptions.TextFormattingMode="Display" VerticalContentAlignment="Center">
+            <Label.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF153208" Offset="0.004"/>
+                    <GradientStop Color="White" Offset="0.264"/>
+                    <GradientStop Color="#FF153208" Offset="0.991"/>
+                    <GradientStop Color="White" Offset="0.83"/>
+                    <GradientStop Color="#FFACCB9D" Offset="0.132"/>
+                    <GradientStop Color="#FEAFC1A7" Offset="0.928"/>
+                </LinearGradientBrush>
+            </Label.Background>
+        </Label>
+        <TextBox x:Name="txtname" HorizontalAlignment="Left" Height="58" Margin="978,334,0,0" TextWrapping="Wrap" Text="Enter Name" VerticalAlignment="Top" Width="423" SelectionOpacity="0.2" FontStyle="Italic" FontSize="24" Cursor="IBeam"/>
+        <Slider x:Name="sliderchip" HorizontalAlignment="Left" Margin="932,496,0,0" VerticalAlignment="Top" Width="591" Minimum="50" Maximum="1500" SmallChange="10" TickPlacement="TopLeft" TickFrequency="50" LargeChange="100" IsDirectionReversed="False" IsSnapToTickEnabled="True" Cursor="Hand" Height="43" AutoToolTipPlacement="TopLeft" FontSize="22"/>
+        <Button x:Name="btnplayersubmit" Content="Submit" HorizontalAlignment="Left" Height="142" Margin="546,741,0,0" VerticalAlignment="Top" Width="255" FontSize="36" Click="btnplayersubmit_Click" FontWeight="Bold"/>
+        <Button x:Name="btnback" Content="Back to Menu" HorizontalAlignment="Left" Height="142" Margin="1089,741,0,0" VerticalAlignment="Top" Width="251" FontSize="36" Click="btnplayercancel_Click" FontWeight="Bold">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                    <GradientStop Color="#FFF3F3F3" Offset="0"/>
+                    <GradientStop Color="#FFEBEBEB" Offset="0.5"/>
+                    <GradientStop Color="#FFDDDDDD" Offset="0.506"/>
+                    <GradientStop Color="#FFCDCDCD" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Label x:Name="lblchip" Content="Enter Starting Deposit" HorizontalAlignment="Left" Height="103" Margin="421,460,0,0" VerticalAlignment="Top" Width="356" Opacity="0.99" FontSize="30" RenderTransformOrigin="0.485,0.493" FontWeight="Medium" TextOptions.TextFormattingMode="Display" VerticalContentAlignment="Center">
+            <Label.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF153208" Offset="0.004"/>
+                    <GradientStop Color="White" Offset="0.264"/>
+                    <GradientStop Color="#FF153208" Offset="0.991"/>
+                    <GradientStop Color="White" Offset="0.83"/>
+                    <GradientStop Color="#FFACCB9D" Offset="0.132"/>
+                    <GradientStop Color="#FEAFC1A7" Offset="0.928"/>
+                </LinearGradientBrush>
+            </Label.Background>
+        </Label>
+        <Label x:Name="lblinfo" Content="Profile Created" HorizontalAlignment="left" Height="90" Margin="529,73,0,0" VerticalAlignment="Top" Width="831" Foreground="#FFEEA50A" FontSize="64" FontFamily="Bookman Old Style" FontWeight="Bold" HorizontalContentAlignment="Center" Visibility="Hidden"/>
+
+    </Grid>
+</Window>

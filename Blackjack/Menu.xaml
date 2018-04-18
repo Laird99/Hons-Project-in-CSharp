@@ -1,0 +1,41 @@
+﻿<Window x:Class="Blackjack.Menu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Blackjack"
+        mc:Ignorable="d"
+        Title="Menu" Height="1080" Width="1960">
+    <Grid Background="#FF0B3000" Width="1920" Height="1080">
+        <Button x:Name="btncreate" Content="Create Profile" HorizontalAlignment="Left" VerticalAlignment="Top" Width="268" Margin="374,289,0,0" Height="172" Foreground="Black" BorderBrush="{x:Null}" Click="btncreate_Click" FontFamily="Trebuchet MS" FontSize="24" FontWeight="Bold">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                    <GradientStop Color="#FFEBEBEB" Offset="0.809"/>
+                    <GradientStop Color="#FF709FE4" Offset="0.46"/>
+                    <GradientStop Color="#FF002457" Offset="0.089"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnload" Content="Load Profile" HorizontalAlignment="Left" VerticalAlignment="Top" Width="268" Margin="856,289,0,0" Height="172" Foreground="Black" BorderBrush="{x:Null}" Click="btnload_Click" FontFamily="Trebuchet MS" FontWeight="Bold" FontSize="24">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                    <GradientStop Color="#FFEBEBEB" Offset="0.809"/>
+                    <GradientStop Color="#FF709FE4" Offset="0.46"/>
+                    <GradientStop Color="#FF002457" Offset="0.089"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btndelete" Content="Delete Profile" HorizontalAlignment="Left" VerticalAlignment="Top" Width="268" Margin="1312,289,0,0" Height="172" Foreground="Black" BorderBrush="{x:Null}" FontSize="24" FontFamily="Trebuchet MS" FontWeight="Bold" Click="btndelete_Click" RenderTransformOrigin="-0.831,0.478">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                    <GradientStop Color="#FFEBEBEB" Offset="0.809"/>
+                    <GradientStop Color="#FF709FE4" Offset="0.46"/>
+                    <GradientStop Color="#FF002457" Offset="0.089"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btninfo" Content="Help and Credits" HorizontalAlignment="Left" VerticalAlignment="Top" Width="287" Margin="459,663,0,0" Height="161" Foreground="Black" BorderBrush="{x:Null}" Background="#FFEBFF22" FontSize="24" FontFamily="Razer Text Regular" FontWeight="Bold" FontStyle="Italic" Click="btninfo_Click"/>
+        <Button x:Name="btnexit" Content="Exit" HorizontalAlignment="Left" VerticalAlignment="Top" Width="287" Margin="1209,663,0,0" Height="161" Foreground="Black" BorderBrush="{x:Null}" Background="#FFFF1717" OpacityMask="#FF040404" Click="btnexit_Click" FontFamily="Razer Text Regular" FontSize="36" FontWeight="Bold"/>
+
+    </Grid>
+</Window>
